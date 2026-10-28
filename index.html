@@ -1,0 +1,1289 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Our Savior Anglican Church | Ogbunike</title>
+
+<meta name="description" content="Welcome to Our Savior Anglican Church, Ndi Agu Ifite, Ogbunike, Anambra State. Join us for worship, fellowship, prayer and the Word of God.">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --gold: #b8860b;
+        --dark-gold: #8b6508;
+        --cream: #fffaf0;
+        --dark: #201d18;
+        --white: #ffffff;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: var(--cream);
+        color: var(--dark);
+        line-height: 1.7;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        background: var(--white);
+        padding: 15px 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border: none;
+    border-radius: 50%;
+    display: block;
+    flex-shrink: 0;
+}
+
+    .brand h1 {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .brand p {
+        font-size: 12px;
+        color: var(--dark-gold);
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        color: var(--dark);
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: var(--gold);
+    }
+
+    .button {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--white);
+        padding: 12px 24px;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background: var(--dark-gold);
+        transform: translateY(-2px);
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 90px 8%;
+        display: flex;
+        align-items: center;
+        background:
+            linear-gradient(90deg,
+            rgba(20, 17, 10, 0.88),
+            rgba(20, 17, 10, 0.35)),
+            url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1800&q=85")
+            center/cover no-repeat;
+        color: var(--white);
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero .welcome {
+        color: #f2cf72;
+        letter-spacing: 4px;
+        font-weight: bold;
+    }
+
+    .hero h2 {
+        font-family: Georgia, serif;
+        font-size: clamp(38px, 5vw, 65px);
+        line-height: 1.15;
+        margin: 15px 0;
+    }
+
+    .hero h2 span {
+        color: #f2cf72;
+    }
+
+    .hero p {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    section {
+        padding: 65px 8%;
+        scroll-margin-top: 100px;
+    }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .section-heading span {
+        color: var(--gold);
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .section-heading h2 {
+        font-family: Georgia, serif;
+        font-size: 35px;
+        margin-top: 8px;
+    }
+
+    .section-heading p {
+        max-width: 650px;
+        margin: 10px auto 0;
+    }
+
+    .values {
+        background: var(--white);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        text-align: center;
+    }
+
+    .value {
+        padding: 20px;
+    }
+
+    .value .icon {
+        font-size: 38px;
+        color: var(--gold);
+    }
+
+    .value h3 {
+        font-family: Georgia, serif;
+        margin: 8px 0;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+        align-items: center;
+    }
+
+    .about-image {
+        min-height: 300px;
+        border-radius: 15px;
+        background:
+            linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)),
+            url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1000&q=85")
+            center/cover;
+    }
+
+    .about-text h2 {
+        font-family: Georgia, serif;
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        margin-bottom: 15px;
+    }
+
+    .service-section {
+        background: var(--white);
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .card {
+        background: var(--cream);
+        padding: 28px;
+        border-radius: 12px;
+        border-bottom: 4px solid var(--gold);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+        font-family: Georgia, serif;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .card p {
+        margin-bottom: 8px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .contact-box {
+        background: var(--white);
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .contact-box h3 {
+        font-family: Georgia, serif;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        background: #201d18;
+        color: var(--white);
+        padding: 35px 8%;
+        text-align: center;
+    }
+
+    footer strong {
+        color: #f2cf72;
+    }
+
+    footer p {
+        margin: 8px 0;
+    }
+
+    @media (max-width: 900px) {
+        header {
+            flex-direction: column;
+        }
+
+        nav {
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .about-grid,
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        header {
+            padding: 15px 4%;
+        }
+
+        .brand h1 {
+            font-size: 17px;
+        }
+
+        nav {
+            gap: 10px 15px;
+        }
+
+        nav a {
+            font-size: 12px;
+        }
+
+        .hero {
+            min-height: 450px;
+            padding: 65px 6%;
+        }
+
+        .hero p {
+            font-size: 15px;
+        }
+
+        section {
+            padding: 45px 6%;
+        }
+
+        .values,
+        .cards {
+            grid-template-columns: 1fr;
+        }
+
+        .section-heading h2,
+        .about-text h2 {
+            font-size: 29px;
+        }
+    }
+	.church-building-photo {
+max-width: 850px;
+margin: 30px auto;
+text-align: center;
+}
+
+.church-building-photo img {
+display: block;
+width: 100%;
+height: auto;
+max-height: 500px;
+object-fit: cover;
+border-radius: 16px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.church-building-photo p {
+margin-top: 12px;
+color: #80652b;
+font-weight: bold;
+}
+/* ==================================
+COMPLETE WEBSITE FADE-IN ANIMATION
+================================== */
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(25px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+
+/* Header and navigation */
+header {
+animation: fadeIn 0.8s ease both;
+}
+
+/* Hero section */
+.hero h1 {
+animation: fadeIn 1s ease both;
+}
+
+.hero p {
+animation: fadeIn 1s ease 0.2s both;
+}
+
+.hero .button,
+.hero a {
+animation: fadeIn 1s ease 0.4s both;
+}
+
+/* Logo */
+.logo {
+animation: fadeIn 1s ease both;
+}
+
+/* Section headings */
+.section-heading,
+section h2 {
+animation: fadeIn 0.9s ease both;
+}
+
+/* Cards throughout the website */
+.service-card,
+.sermon-card,
+.event-card,
+.value-card {
+animation: fadeIn 0.9s ease both;
+}
+
+/* Church photos and gallery images */
+.church-building-photo,
+.gallery img,
+.gallery-item,
+section img {
+animation: fadeIn 1s ease both;
+}
+
+/* Reverend section */
+.reverend-content,
+.reverend-info {
+animation: fadeIn 1s ease both;
+}
+
+/* Contact details and footer */
+.contact-info,
+.contact-details,
+footer {
+animation: fadeIn 1s ease both;
+}
+
+/* Smooth hover effects */
+.service-card,
+.sermon-card,
+.event-card,
+.value-card,
+.church-building-photo img,
+.gallery img {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.sermon-card:hover,
+.event-card:hover,
+.value-card:hover {
+transform: translateY(-5px);
+}
+
+/* Respect visitors who prefer less animation */
+@media (prefers-reduced-motion: reduce) {
+*,
+*::before,
+*::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+}
+}
+/* Elements before they appear on screen */
+.scroll-fade {
+opacity: 0;
+transform: translateY(30px);
+transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Elements after they appear on screen */
+.scroll-fade.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* Accessibility: respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+.scroll-fade {
+opacity: 1;
+transform: none;
+transition: none;
+}
+}
+/* Hamburger menu button */
+.menu-toggle {
+display: block;
+position: relative;
+z-index: 1001;
+margin: 10px auto;
+padding: 12px 18px;
+border: none;
+border-radius: 50px;
+background: #d4af37;
+color: #ffffff;
+font-size: 25px;
+cursor: pointer;
+}
+
+/* Navigation menu */
+#mainNavigation {
+display: none;
+flex-direction: column;
+align-items: stretch;
+gap: 0;
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 1000;
+padding: 12px 20px 20px;
+background: #ffffff;
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Open menu */
+#mainNavigation.menu-open {
+display: flex;
+}
+
+/* Navigation links */
+#mainNavigation a {
+display: block;
+padding: 14px 12px;
+color: #80652b;
+text-decoration: none;
+border-bottom: 1px solid #eee5cd;
+}
+
+#mainNavigation a:hover {
+background: #fbf6e8;
+}
+
+/* WhatsApp button inside the menu */
+#mainNavigation a.button {
+margin-top: 12px;
+text-align: center;
+border-radius: 8px;
+background: #d4af37;
+color: #ffffff;
+}
+
+/* Allow the menu to position itself below the header */
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: #ffffff;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.developer-credit {
+margin-top: 25px;
+padding: 18px 12px;
+border-top: 1px solid #e6d8b0;
+text-align: center;
+font-size: 14px;
+}
+
+.developer-credit p {
+margin-bottom: 8px;
+}
+
+.developer-credit strong {
+color: #b08d2d;
+}
+
+.developer-credit a {
+color: #80652b;
+font-weight: bold;
+text-decoration: none;
+}
+
+.developer-credit a:hover {
+text-decoration: underline;
+}
+</style>
+
+</head><body><header>
+    <div class="brand">
+        <img src="church-logo.jpeg"
+     alt="Our Savior Anglican Church Logo"
+     class="logo">
+
+        <div>
+            <h1>OUR SAVIOR</h1>
+            <p>ANGLICAN CHURCH</p>
+            <p>Ndi Agu Ifite, Ogbunike</p>
+        </div>
+    </div>
+<button class="menu-toggle"
+     id="menuToggle"
+     aria-label="Open navigation menu"
+     aria-expanded="false"
+     aria-controls="mainNavigation">
+☰
+</button>
+
+<nav id="mainNavigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+		 <a href="#pastor">Our Reverend</a>
+        <a href="#services">Services</a>
+		<a href="#sermons">Sermons</a>
+		<a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+		<a href="#church-signboard">Church-Signboard</a>
+        <a href="#contact">Contact</a>
+    </nav>
+	<a href="https://wa.me/2348037089068"
+   class="button"
+   target="_blank"
+   rel="noopener noreferrer">
+    Chat on WhatsApp
+</a>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO OUR CHURCH</p>
+
+            <h2>
+                Our Savior<br>
+                <span>Anglican Church</span>
+            </h2>
+
+            <p>
+                Ndi Agu Ifite, Ogbunike,<br>
+                Anambra State, Nigeria.
+            </p>
+
+            <p>
+                "For where two or three gather in my name,
+                there am I with them."
+                <br><strong>Matthew 18:20</strong>
+            </p>
+
+            <a href="#services" class="button">Join Us for Worship</a>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="value">
+            <div class="icon">✝</div>
+            <h3>Worship</h3>
+            <p>Glorifying God in all we do.</p>
+        </div>
+
+        <div class="value">
+            <div class="icon">♡</div>
+            <h3>Fellowship</h3>
+            <p>Growing together in Christ.</p>
+        </div>
+
+        <div class="value">
+            <div class="icon">✧</div>
+            <h3>Prayer</h3>
+            <p>Seeking God's presence daily.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-grid">
+
+            <div class="about-image" role="img"
+                 aria-label="Church building"></div>
+
+            <div class="about-text">
+                <div class="section-heading" style="text-align:left">
+                    <span>ABOUT OUR CHURCH</span>
+                    <h2>A Place of Worship, Love and Fellowship</h2>
+                </div>
+
+                <p>
+                    Welcome to Our Savior Anglican Church,
+                    Ndi Agu Ifite, Ogbunike, Anambra State.
+                </p>
+
+                <p>
+                    We are a Christian community committed to
+                    worshipping God, learning His Word, growing
+                    in faith, and sharing Christ's love with
+                    our community.
+                </p>
+
+                <p>
+                    We welcome you and your family to join us
+                    as we grow together in Christ.
+                </p>
+
+                <a href="#contact" class="button">Get in Touch</a>
+            </div>
+
+        </div>
+		<div class="church-building-photo">
+    <img
+        src="church-building.jpeg"
+        alt="Our Saviour's Anglican Church Parish building in Ogbunike"
+        loading="lazy"
+    >
+    <p>Our Saviour's Anglican Church Parish, Ogbunike</p>
+</div>
+    </section>
+	<!-- SERMONS SECTION -->
+<section id="sermons" style="background:#ffffff;">
+
+    <div class="section-heading">
+        <span>GROW IN GOD'S WORD</span>
+        <h2>Our Sermons</h2>
+        <p>
+            Listen to God's Word, strengthen your faith,
+            and discover the message of Jesus Christ.
+        </p>
+    </div>
+
+    <div class="cards">
+
+        <!-- SERMON ONE -->
+        <div class="card">
+
+            <div style="
+                background:#201d18;
+                height:190px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                border-radius:10px;
+                margin-bottom:20px;
+                color:#f2cf72;
+                font-size:55px;
+            ">
+                ▶
+            </div>
+
+            <p style="
+                color:#b8860b;
+                font-weight:bold;
+                font-size:12px;
+            ">
+                SERMON 01
+            </p>
+
+            <h3>Walking in Faith</h3>
+
+            <p>
+                Discover how trusting God can strengthen
+                your Christian journey.
+            </p>
+
+            <a
+                href="#sermon-contact"
+                class="button"
+                style="margin-top:12px;"
+            >
+                Watch Sermon
+            </a>
+
+        </div>
+
+        <!-- SERMON TWO -->
+        <div class="card">
+
+            <div style="
+                background:#201d18;
+                height:190px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                border-radius:10px;
+                margin-bottom:20px;
+                color:#f2cf72;
+                font-size:55px;
+            ">
+                ▶
+            </div>
+
+            <p style="
+                color:#b8860b;
+                font-weight:bold;
+                font-size:12px;
+            ">
+                SERMON 02
+            </p>
+
+            <h3>The Power of Prayer</h3>
+
+            <p>
+                Learn about the importance of prayer
+                and maintaining a relationship with God.
+            </p>
+
+            <a
+                href="#sermon-contact"
+                class="button"
+                style="margin-top:12px;"
+            >
+                Watch Sermon
+            </a>
+
+        </div>
+
+        <!-- SERMON THREE -->
+        <div class="card">
+
+            <div style="
+                background:#201d18;
+                height:190px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                border-radius:10px;
+                margin-bottom:20px;
+                color:#f2cf72;
+                font-size:55px;
+            ">
+                ▶
+            </div>
+
+            <p style="
+                color:#b8860b;
+                font-weight:bold;
+                font-size:12px;
+            ">
+                SERMON 03
+            </p>
+
+            <h3>Living in God's Love</h3>
+
+            <p>
+                Explore how we can show God's love
+                through kindness, service, and fellowship.
+            </p>
+
+            <a
+                href="#sermon-contact"
+                class="button"
+                style="margin-top:12px;"
+            >
+                Watch Sermon
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="sermon-contact" style="
+        text-align:center;
+        margin-top:35px;
+        padding:25px;
+        background:#fffaf0;
+        border-radius:12px;
+    ">
+
+        <h3 style="font-family:Georgia,serif;">
+            Watch Our Church Services
+        </h3>
+
+
+        <p style="margin:10px 0;">
+            Our sermon videos will be available here
+            when the church's recordings are added.
+        </p>
+
+        <p style="font-size:14px;color:#666;">
+            Contact the church for information about
+            recorded sermons and online services.
+        </p>
+
+    </div>
+
+</section>
+<!-- END OF SERMONS SECTION -->
+<!-- OUR REVEREND SECTION --><section id="pastor" style="background:#fffaf0;"><div class="section-heading">
+    <span>OUR SPIRITUAL LEADER</span>
+    <h2>Meet Our Reverend</h2>
+    <p>
+        Guided by faith, committed to God's Word,
+        and dedicated to serving God's people.
+    </p>
+</div>
+
+<div class="about-grid">
+
+    <div style="text-align:center;">
+        <img
+            src="reverend.jpeg"
+            alt="Rev. Churchill Ifeanyichukwu"
+            style="
+                width:100%;
+                max-width:380px;
+                height:400px;
+                object-fit:cover;
+                border-radius:15px;
+                border:4px solid #b8860b;
+            "
+        >
+    </div>
+
+    <div class="about-text">
+
+        <p style="
+            color:#b8860b;
+            font-weight:bold;
+            letter-spacing:2px;
+        ">
+            OUR REVEREND
+        </p>
+
+        <h2>Rev. Churchill Ifeanyichukwu</h2>
+
+        <p>
+            Welcome to Our Savior Anglican Church,
+            Ndi Agu Ifite, Ogbunike, Anambra State.
+        </p>
+
+        <p>
+            Through worship, the teaching of God's Word,
+            prayer, and fellowship, our church seeks to
+            help people grow in faith and live according
+            to the teachings of Jesus Christ.
+        </p>
+
+        <p>
+            We warmly welcome you and your family to join
+            our church community as we worship God and
+            grow together in Christ.
+        </p>
+
+        <a href="#contact" class="button">
+            Visit Our Church
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+<!-- END OF OUR REVEREND SECTION -->
+    <section class="service-section" id="services">
+        <div class="section-heading">
+            <span>WORSHIP WITH US</span>
+            <h2>Our Church Services</h2>
+            <p>
+                Come and experience worship, prayer,
+                fellowship, and the teaching of God's Word.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Sunday Worship</h3>
+                <p><strong>Day:</strong> Sunday.9:00AM</p>
+                <p>Join us for our weekly worship service.</p>
+            </div>
+
+            <div class="card">
+                <h3>Bible Study</h3>
+                <p><strong>Day:</strong> Tuesday.4:00PM</p>
+                <p>Study the Scriptures and grow in faith.</p>
+            </div>
+
+            <div class="card">
+                <h3>Prayer Meetings</h3>
+                <p><strong>Schedule:</strong> Friday.6:00AM</p>
+                <p>Join us in prayer and fellowship.</p>
+            </div>
+
+        </div>
+
+    </section>
+<!-- CHURCH PHOTO GALLERY -->
+<section id="gallery" style="background:#ffffff;">
+
+    <div class="section-heading">
+        <span>OUR CHURCH FAMILY</span>
+
+        <h2>Church Photo Gallery</h2>
+
+        <p>
+            Moments of worship, fellowship, prayer,
+            and service in the house of God.
+        </p>
+    </div>
+
+    <div style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:20px;
+    ">
+
+        <div>
+            <img
+                src="https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=700&q=80"
+                alt="Church building"
+                loading="lazy"
+                style="width:100%;height:230px;object-fit:cover;border-radius:12px;"
+            >
+
+            <h3 style="margin-top:10px;">Our Church</h3>
+
+            <p>A place of worship and fellowship.</p>
+        </div>
+
+        <div>
+            <img
+                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=700&q=80"
+                alt="People gathered together"
+                loading="lazy"
+                style="width:100%;height:230px;object-fit:cover;border-radius:12px;"
+            >
+
+            <h3 style="margin-top:10px;">Christian Fellowship</h3>
+
+            <p>Growing together in faith and love.</p>
+        </div>
+
+        <div>
+            <img
+                src="https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=700&q=80"
+                alt="Church worship"
+                loading="lazy"
+                style="width:100%;height:230px;object-fit:cover;border-radius:12px;"
+            >
+
+            <h3 style="margin-top:10px;">Worship and Praise</h3>
+
+            <p>Giving glory and honour to God.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- END OF CHURCH PHOTO GALLERY -->
+   <section id="events" class="section">
+    <div class="section-heading">
+        <p class="eyebrow">JOIN US IN WORSHIP</p>
+        <h2>Our Weekly Activities</h2>
+        <p>Come and worship with us at Our Saviour's Anglican Church Parish, Ogbunike.</p>
+    </div><div class="services-grid">
+    <div class="service-card">
+        <h3>Sunday Service</h3>
+        <p>Every Sunday</p>
+        <strong>9:00 AM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Morning Prayer</h3>
+        <p>Monday – Saturday</p>
+        <strong>6:00 AM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Bible Study</h3>
+        <p>Every Tuesday</p>
+        <strong>4:00 PM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Wednesday Prayer</h3>
+        <p>Every Wednesday</p>
+        <strong>9:00 AM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Choir Practice</h3>
+        <p>Every Thursday</p>
+        <strong>4:00 PM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Communicants' Class</h3>
+        <p>Every Friday</p>
+        <strong>6:00 AM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Brigade Practice</h3>
+        <p>Every Friday</p>
+        <strong>4:00 PM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Gospel Band Practice</h3>
+        <p>Every Saturday</p>
+        <strong>5:00 PM</strong>
+    </div>
+
+    <div class="service-card">
+        <h3>Monthly Night Vigil</h3>
+        <p>Last day of every month</p>
+        <strong>10:00 PM</strong>
+    </div>
+</div>
+
+</section>
+
+<section id="church-signboard" class="section">
+    <div class="section-heading">
+        <p class="eyebrow">OUR CHURCH</p>
+        <h2>Our Official Church Signboard</h2>
+        <p>Learn more about our parish and its weekly activities.</p>
+    </div><div class="church-building-photo">
+    <img
+        src="church-signboard.jpeg"
+        alt="Official signboard of Our Saviour's Anglican Church Parish, Ogbunike"
+        loading="lazy"
+    >
+    <p>Our Saviour's Anglican Church Parish — City of Blessing</p>
+</div>
+
+</section>
+    <section id="contact">
+        <div class="section-heading">
+            <span>WE WOULD LOVE TO HEAR FROM YOU</span>
+            <h2>Contact Our Church</h2>
+            <p>
+                You are welcome to worship with us.
+                We look forward to seeing you.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+                <h3>Visit Us</h3>
+
+                <p><strong>Church:</strong>
+                    Our Savior Anglican Church</p>
+
+                <p><strong>Location:</strong>
+                    Ndi Agu Ifite, Ogbunike,
+                    Anambra State, Nigeria</p>
+
+                <p>
+    <strong>Phone:</strong>
+    <a href="tel:+2348037089068">
+        +234 803 708 9068
+    </a>
+</p>
+
+<p>
+    <strong>WhatsApp:</strong>
+    <a href="https://wa.me/2348037089068"
+       target="_blank"
+       rel="noopener noreferrer">
+        Chat with us
+    </a>
+</p>
+
+<p>
+    <strong>Church Location:</strong>
+    Ndi Agu Ifite, Ogbunike, Anambra State, Nigeria
+</p><a href="https://maps.app.goo.gl/ayaUKSCiqmExCD2o7"
+class="button"
+target="_blank"
+rel="noopener noreferrer">
+📍 Get Directions to Our Church
+</a>
+                <p><strong>Email:</strong>
+                    Contact details coming soon</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Welcome Home</h3>
+
+                <p>
+                    Whether you are visiting for the first time
+                    or looking for a church family, you are
+                    welcome here.
+                </p>
+
+                <p style="margin-top:15px;">
+                    <strong>May the peace of our Lord Jesus
+                    Christ be with you.</strong>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <strong>OUR SAVIOR ANGLICAN CHURCH</strong>
+
+    <p>Ndi Agu Ifite, Ogbunike, Anambra State, Nigeria.</p>
+
+    <p>Worship · Fellowship · Service</p>
+
+    <p>
+        Together in Christ, serving God and our community.
+    </p>
+
+    <p>&copy; <span id="year"></span>
+        Our Savior Anglican Church. All rights reserved.</p>
+		<div class="developer-credit">
+    <p>
+        Website designed and developed by
+        <strong>Chikamso Prosper</strong>
+    </p><a href="https://chikamsoprosper.github.io/kamso-portfolio/"
+   target="_blank"
+   rel="noopener noreferrer">
+    View My Portfolio →
+</a>
+
+</div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+		/* ==================================
+SCROLL-TRIGGERED FADE-IN ANIMATION
+================================== */
+
+const fadeElements = document.querySelectorAll(
+"section, .service-card, .sermon-card, .event-card, " +
+".value-card, .church-building-photo, .gallery img"
+);
+
+fadeElements.forEach(function(element) {
+element.classList.add("scroll-fade");
+});
+
+const fadeObserver = new IntersectionObserver(function(entries) {
+entries.forEach(function(entry) {
+if (entry.isIntersecting) {
+entry.target.classList.add("visible");
+fadeObserver.unobserve(entry.target);
+}
+});
+}, {
+threshold: 0.15
+});
+
+fadeElements.forEach(function(element) {
+fadeObserver.observe(element);
+});
+const menuToggle = document.getElementById("menuToggle");
+const mainNavigation = document.getElementById("mainNavigation");
+
+menuToggle.addEventListener("click", function () {
+const isOpen = mainNavigation.classList.toggle("menu-open");
+
+menuToggle.setAttribute("aria-expanded", isOpen);
+menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+);
+
+menuToggle.textContent = isOpen ? "✕" : "☰";
+
+});
+
+/* Close the menu after a visitor selects a link */
+mainNavigation.querySelectorAll("a").forEach(function (link) {
+link.addEventListener("click", function () {
+mainNavigation.classList.remove("menu-open");
+menuToggle.setAttribute("aria-expanded", "false");
+menuToggle.setAttribute("aria-label", "Open navigation menu");
+menuToggle.textContent = "☰";
+});
+});
+
+/* Close the menu when Escape is pressed */
+document.addEventListener("keydown", function (event) {
+if (event.key === "Escape") {
+mainNavigation.classList.remove("menu-open");
+menuToggle.setAttribute("aria-expanded", "false");
+menuToggle.setAttribute("aria-label", "Open navigation menu");
+menuToggle.textContent = "☰";
+}
+});
+</script>
+
+</body>
+</html>
