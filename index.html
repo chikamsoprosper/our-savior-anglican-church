@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Our Savior Anglican Church | Ogbunike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Our Saviour's Anglican Church | Ogbunike</title>
 
-<meta name="description" content="Welcome to Our Savior Anglican Church, Ndi Agu Ifite, Ogbunike, Anambra State. Join us for worship, fellowship, prayer and the Word of God.">
+<meta name="description" content="Welcome to Our Saviour's Anglican Church, Ndi Agu Ifite, Ogbunike, Anambra State. Join us for worship, fellowship, prayer and the Word of God.">
 
 <style>
     * {
@@ -583,16 +583,79 @@ text-decoration: none;
 .developer-credit a:hover {
 text-decoration: underline;
 }
+
+/* Sermon video layout */
+#sermons .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+#sermons .service-card {
+    min-width: 0;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#sermons video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #000;
+}
+
+@media (max-width: 800px) {
+    #sermons .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    #sermons .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+#gallery .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+#gallery .service-card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+#gallery .service-card img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+    #gallery .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 
 </head><body><header>
     <div class="brand">
-        <img src="church-logo.jpeg"
-     alt="Our Savior Anglican Church Logo"
+        <img src="diocese-logo.jpeg"
+     alt="Our Saviour's Anglican Church Logo"
      class="logo">
 
         <div>
-            <h1>OUR SAVIOR</h1>
+            <h1>OUR SAVIOUR'S</h1>
             <p>ANGLICAN CHURCH</p>
             <p>Ndi Agu Ifite, Ogbunike</p>
         </div>
@@ -613,6 +676,7 @@ text-decoration: underline;
 		<a href="#sermons">Sermons</a>
 		<a href="#gallery">Gallery</a>
         <a href="#events">Events</a>
+		<a href="#donations">Donations</a>
 		<a href="#church-signboard">Church-Signboard</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -631,7 +695,7 @@ text-decoration: underline;
             <p class="welcome">WELCOME TO OUR CHURCH</p>
 
             <h2>
-                Our Savior<br>
+                Our Saviour's<br>
                 <span>Anglican Church</span>
             </h2>
 
@@ -683,7 +747,7 @@ text-decoration: underline;
                 </div>
 
                 <p>
-                    Welcome to Our Savior Anglican Church,
+                    Welcome to Our Saviors Anglican Church,
                     Ndi Agu Ifite, Ogbunike, Anambra State.
                 </p>
 
@@ -712,164 +776,49 @@ text-decoration: underline;
     <p>Our Saviour's Anglican Church Parish, Ogbunike</p>
 </div>
     </section>
-	<!-- SERMONS SECTION -->
-<section id="sermons" style="background:#ffffff;">
-
+	<section id="sermons" class="section">
     <div class="section-heading">
-        <span>GROW IN GOD'S WORD</span>
+        <p class="eyebrow">GROW IN FAITH</p>
         <h2>Our Sermons</h2>
         <p>
-            Listen to God's Word, strengthen your faith,
-            and discover the message of Jesus Christ.
+            Listen to God's Word through these messages from
+            Our Saviour's Anglican Church Parish, Ogbunike.
         </p>
+    </div><div class="services-grid">
+
+    <div class="service-card">
+        <h3>Sermon 1</h3>
+        <p>A message from our church.</p>
+        <video controls preload="metadata"
+               style="width:100%; border-radius:12px;">
+            <source src="sermons/sermon1.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
     </div>
 
-    <div class="cards">
-
-        <!-- SERMON ONE -->
-        <div class="card">
-
-            <div style="
-                background:#201d18;
-                height:190px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                border-radius:10px;
-                margin-bottom:20px;
-                color:#f2cf72;
-                font-size:55px;
-            ">
-                ▶
-            </div>
-
-            <p style="
-                color:#b8860b;
-                font-weight:bold;
-                font-size:12px;
-            ">
-                SERMON 01
-            </p>
-
-            <h3>Walking in Faith</h3>
-
-            <p>
-                Discover how trusting God can strengthen
-                your Christian journey.
-            </p>
-
-            <a
-                href="#sermon-contact"
-                class="button"
-                style="margin-top:12px;"
-            >
-                Watch Sermon
-            </a>
-
-        </div>
-
-        <!-- SERMON TWO -->
-        <div class="card">
-
-            <div style="
-                background:#201d18;
-                height:190px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                border-radius:10px;
-                margin-bottom:20px;
-                color:#f2cf72;
-                font-size:55px;
-            ">
-                ▶
-            </div>
-
-            <p style="
-                color:#b8860b;
-                font-weight:bold;
-                font-size:12px;
-            ">
-                SERMON 02
-            </p>
-
-            <h3>The Power of Prayer</h3>
-
-            <p>
-                Learn about the importance of prayer
-                and maintaining a relationship with God.
-            </p>
-
-            <a
-                href="#sermon-contact"
-                class="button"
-                style="margin-top:12px;"
-            >
-                Watch Sermon
-            </a>
-
-        </div>
-
-        <!-- SERMON THREE -->
-        <div class="card">
-
-            <div style="
-                background:#201d18;
-                height:190px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                border-radius:10px;
-                margin-bottom:20px;
-                color:#f2cf72;
-                font-size:55px;
-            ">
-                ▶
-            </div>
-
-            <p style="
-                color:#b8860b;
-                font-weight:bold;
-                font-size:12px;
-            ">
-                SERMON 03
-            </p>
-
-            <h3>Living in God's Love</h3>
-
-            <p>
-                Explore how we can show God's love
-                through kindness, service, and fellowship.
-            </p>
-
-            <a
-                href="#sermon-contact"
-                class="button"
-                style="margin-top:12px;"
-            >
-                Watch Sermon
-            </a>
-
-        </div>
-
+    <div class="service-card">
+        <h3>Sermon 2</h3>
+        <p>A message from our church.</p>
+        <video controls preload="metadata"
+               style="width:100%; border-radius:12px;">
+            <source src="sermons/sermon2.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
     </div>
 
-    <div id="sermon-contact" style="
-        text-align:center;
-        margin-top:35px;
-        padding:25px;
-        background:#fffaf0;
-        border-radius:12px;
-    ">
-
-        <h3 style="font-family:Georgia,serif;">
-            Watch Our Church Services
-        </h3>
-
+    <div class="service-card">
+        <h3>Sermon 3</h3>
+        <p>A message from our church.</p>
+        <video controls preload="metadata"
+               style="width:100%; border-radius:12px;">
+            <source src="sermons/sermon3.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
     </div>
+
+</div>
 
 </section>
-<!-- END OF SERMONS SECTION -->
 <!-- OUR REVEREND SECTION --><section id="pastor" style="background:#fffaf0;"><div class="section-heading">
     <span>OUR SPIRITUAL LEADER</span>
     <h2>Meet Our Reverend</h2>
@@ -909,7 +858,7 @@ text-decoration: underline;
         <h2>Rev. Churchill Ifeanyichukwu</h2>
 
         <p>
-            Welcome to Our Savior Anglican Church,
+            Welcome to Our Saviours Anglican Church,
             Ndi Agu Ifite, Ogbunike, Anambra State.
         </p>
 
@@ -969,69 +918,53 @@ text-decoration: underline;
         </div>
 
     </section>
-<!-- CHURCH PHOTO GALLERY -->
-<section id="gallery" style="background:#ffffff;">
 
+<section id="gallery" class="section">
     <div class="section-heading">
-        <span>OUR CHURCH FAMILY</span>
-
+        <p class="eyebrow">OUR CHURCH FAMILY</p>
         <h2>Church Photo Gallery</h2>
+        <p>Moments of worship, fellowship, prayer, and service in the house of God.</p>
+    </div><div class="services-grid">
 
-        <p>
-            Moments of worship, fellowship, prayer,
-            and service in the house of God.
-        </p>
+    <!-- OUR CHURCH -->
+    <div class="service-card">
+        <img
+            src="church-interior.jpeg"
+            alt="Inside Our Saviour's Anglican Church"
+            loading="lazy"
+            style="width:100%; height:220px; object-fit:cover; border-radius:12px;"
+        >
+        <h3>Our Church</h3>
+        <p>A place of prayer, worship, and spiritual growth.</p>
     </div>
 
-    <div style="
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-        gap:20px;
-    ">
-
-        <div>
-            <img
-                src="https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=700&q=80"
-                alt="Church building"
-                loading="lazy"
-                style="width:100%;height:230px;object-fit:cover;border-radius:12px;"
-            >
-
-            <h3 style="margin-top:10px;">Our Church</h3>
-
-            <p>A place of worship and fellowship.</p>
-        </div>
-
-        <div>
-            <img
-                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=700&q=80"
-                alt="People gathered together"
-                loading="lazy"
-                style="width:100%;height:230px;object-fit:cover;border-radius:12px;"
-            >
-
-            <h3 style="margin-top:10px;">Christian Fellowship</h3>
-
-            <p>Growing together in faith and love.</p>
-        </div>
-
-        <div>
-            <img
-                src="https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=700&q=80"
-                alt="Church worship"
-                loading="lazy"
-                style="width:100%;height:230px;object-fit:cover;border-radius:12px;"
-            >
-
-            <h3 style="margin-top:10px;">Worship and Praise</h3>
-
-            <p>Giving glory and honour to God.</p>
-        </div>
-
+    <!-- WORSHIP AND PRAISE -->
+    <div class="service-card">
+        <img
+            src="church-fellowship.jpeg"
+            alt="Church members participating in worship and praise"
+            loading="lazy"
+            style="width:100%; height:220px; object-fit:cover; border-radius:12px;"
+        >
+        <h3>Worship and Praise</h3>
+        <p>United in worship, giving glory and honour to God.</p>
     </div>
+
+    <!-- CHRISTIAN FELLOWSHIP -->
+    <div class="service-card">
+        <img
+            src="church-group.jpeg"
+            alt="Members of Our Saviour's Anglican Church gathered together"
+            loading="lazy"
+            style="width:100%; height:220px; object-fit:cover; border-radius:12px;"
+        >
+        <h3>Christian Fellowship</h3>
+        <p>Growing together in faith, unity, and love.</p>
+    </div>
+
+</div>
 
 </section>
-<!-- END OF CHURCH PHOTO GALLERY -->
    <section id="events" class="section">
     <div class="section-heading">
         <p class="eyebrow">JOIN US IN WORSHIP</p>
@@ -1095,6 +1028,60 @@ text-decoration: underline;
 
 </section>
 
+<section id="donations" class="section">
+    <div class="section-heading">
+        <p class="eyebrow">SUPPORT GOD'S WORK</p>
+        <h2>Give to Our Church</h2>
+        <p>
+            Your generous donations help support our church ministry,
+            worship, and community activities.
+        </p>
+    </div><div class="services-grid">
+
+    <div class="service-card">
+        <h3>First Bank</h3>
+        <p><strong>Account Name</strong></p>
+        <p>Our Saviour's Anglican Church Ogbunike</p>
+
+        <p><strong>Account Number</strong></p>
+        <p id="firstBankAccount">3001082101</p>
+
+        <button class="button"
+                type="button"
+                onclick="copyChurchAccount('firstBankAccount')">
+            Copy Account Number
+        </button>
+    </div>
+
+    <div class="service-card">
+        <h3>UBA Bank</h3>
+        <p><strong>Account Name</strong></p>
+        <p>Our Saviour's Anglican Church Ogbunike</p>
+
+        <p><strong>Account Number</strong></p>
+        <p id="ubaAccount">2328965942</p>
+
+        <button class="button"
+                type="button"
+                onclick="copyChurchAccount('ubaAccount')">
+            Copy Account Number
+        </button>
+    </div>
+
+</div>
+
+<p id="copyAccountMessage"
+   role="status"
+   aria-live="polite"
+   style="text-align:center; margin-top:20px;">
+</p>
+
+<p style="text-align:center; margin-top:20px;">
+    Thank you for supporting our church. May God bless you!
+</p>
+
+</section>
+
 <section id="church-signboard" class="section">
     <div class="section-heading">
         <p class="eyebrow">OUR CHURCH</p>
@@ -1126,7 +1113,7 @@ text-decoration: underline;
                 <h3>Visit Us</h3>
 
                 <p><strong>Church:</strong>
-                    Our Savior Anglican Church</p>
+                    Our Saviour's Anglican Church</p>
 
                 <p><strong>Location:</strong>
                     Ndi Agu Ifite, Ogbunike,
@@ -1182,7 +1169,12 @@ rel="noopener noreferrer">
 </main>
 
 <footer>
-    <strong>OUR SAVIOR ANGLICAN CHURCH</strong>
+<div class="footer-church-logo">
+    <img src="diocese-logo.jpeg"
+         alt="Diocese on the Niger logo"
+         style="width:90px; height:auto; display:block; margin:0 auto 12px;">
+</div>
+    <strong>OUR SAVIOUR'S ANGLICAN CHURCH PARISH</strong>
 
     <p>Ndi Agu Ifite, Ogbunike, Anambra State, Nigeria.</p>
 
@@ -1193,7 +1185,7 @@ rel="noopener noreferrer">
     </p>
 
     <p>&copy; <span id="year"></span>
-        Our Savior Anglican Church. All rights reserved.</p>
+        Our Savior's Anglican Church. All rights reserved.</p>
 		<div class="developer-credit">
     <p>
         Website designed and developed by
@@ -1272,6 +1264,30 @@ menuToggle.setAttribute("aria-label", "Open navigation menu");
 menuToggle.textContent = "☰";
 }
 });
+function copyChurchAccount(elementId) {
+    const accountNumber =
+        document.getElementById(elementId).textContent.trim();
+
+    const message =
+        document.getElementById("copyAccountMessage");
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(accountNumber)
+            .then(function () {
+                message.textContent =
+                    "Account number copied! Open your banking app to transfer.";
+            })
+            .catch(function () {
+                message.textContent =
+                    "Please select and copy this account number manually: " +
+                    accountNumber;
+            });
+    } else {
+        message.textContent =
+            "Account number: " + accountNumber +
+            ". Please copy it manually.";
+    }
+}
 </script>
 
 </body>
